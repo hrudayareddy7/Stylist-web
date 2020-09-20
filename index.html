@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<title>SummerSale</title>
+	<style>
+		/* Make the image fully responsive */
+		.carousel-inner img {
+			width: 100%;
+		}
+
+		.mydiv {
+			transform: rotate(90deg);
+		}
+
+		.checked {
+			color: orange;
+		}
+
+		.container-fluid1 {
+			position: relative;
+			margin-top: 80px;
+			text-align: center;
+			color: white;
+		}
+
+		.centered {
+			position: absolute;
+			top: 50%;
+			padding-left: 25%;
+			text-align: center;
+			float: left;
+			font-size: 25px;
+			font-weight: 700;
+			color: black;
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+			transform: translate(-50%, -50%);
+
+		}
+
+		.centered1 {
+			position: absolute;
+			top: 50%;
+			padding-left: 75%;
+			text-align: center;
+			float: left;
+			font-size: 25px;
+			font-weight: 700;
+			color: black;
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+			transform: translate(-50%, -50%);
+
+		}
+
+		.centered2 {
+			position: absolute;
+			top: 50%;
+			padding-left: 125%;
+			text-align: center;
+			float: left;
+			font-size: 25px;
+			color: black;
+			font-weight: 700;
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+			transform: translate(-50%, -50%);
+
+		}
+
+		.centered3 {
+			position: absolute;
+			top: 50%;
+			padding-left: 175%;
+			text-align: center;
+			float: left;
+			font-size: 25px;
+			color: black;
+			font-weight: 500;
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+			transform: translate(-50%, -50%);
+
+		}
+
+		.centered5 {
+			position: absolute;
+			top: 50%;
+			padding-left: 50%;
+			text-align: center;
+			float: left;
+			font-size: 100px;
+			color: white;
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+			transform: translate(-50%, -50%);
+
+		}
+
+		.con1 {
+			color: black;
+			font-size: 20px;
+			line-height: 2.8;
+
+		}
+
+		.con {
+			color: black;
+			font-size: 20px;
+
+
+		}
+
+		.arrow {
+			border: solid black;
+			border-width: 0 3px 3px 0;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.down {
+			transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+		}
+
+		.dropdown-toggle::after {
+			display: none;
+		}
+
+		.container {
+			position: relative;
+			margin: 0 auto;
+		}
+
+		.k {
+			vertical-align: middle;
+			opacity: 0.2;
+		}
+
+		.content2 {
+			position: absolute;
+			bottom: 0;
+
+			/* Black background with 0.5 opacity */
+
+			width: 100%;
+			padding: 20px;
+		}
+
+		.text-block {
+			position: absolute;
+			top: 10px;
+			left: 0px;
+			background-color: pink;
+			color: black;
+
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.paddingfooter {
+			padding-right: 0;
+			padding-left: 0;
+		}
+
+		.btn-circle.btn-xl {
+			width: 50px;
+			height: 50px;
+			padding: 5px 12px;
+			border-radius: 255px;
+			font-size: 30px;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar  navbar-expand-lg bg-light navbar-light fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">MODIST</a>
+			</div>
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#shop">Shop</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#blog">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div id="demo" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="images/ladies3.jpg" alt="Los Angeles" width="100%" height="600px">
+					<div class="carousel-caption" style="margin: 120px;">
+						<h1
+							style="font-size: 140px;font-stretch:ultra-condensed;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+							<b>LE STYLIST</b></h1>
+						<div style="line-height: 0.8;">
+							<p style="font-size:40px;letter-spacing: -10px;display: inline;">--------</p>&ensp;
+							<p style="display: inline-block;font-size: 40px;font-weight: 200;">WEAR YOUR DRESS</p><br>
+						</div>
+						<div class="dropdown">
+							<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"
+								style="border-radius: 70%;">
+								<i class="arrow down"></i>
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#trending">Western</a>
+								<a class="dropdown-item" href="#shop">Traditional</a>
+								<a class="dropdown-item" href="#shop">Formal</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="images/diwali7.jpg" alt="Chicago" width="100%" height="600px">
+					<div class="carousel-caption" style="margin: 120px;">
+						<h1
+							style="font-size: 140px;font-stretch:ultra-condensed;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+							<b>LE STYLIST</b></h1>
+						<div style="line-height: 0.8;">
+							<p style="font-size:40px;letter-spacing: -10px;display: inline;">--------</p>&ensp;
+							<p style="display: inline-block;font-size: 40px;font-weight: 200;">WEAR YOUR DRESS</p><br>
+						</div>
+						<div class="dropdown">
+							<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"
+								style="border-radius: 70%;">
+								<i class="arrow down"></i>
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#trending">Western</a>
+								<a class="dropdown-item" href="#shop">Traditional</a>
+								<a class="dropdown-item" href="#shop">Formal</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="images/fam5.jpg" alt="New York" width="100%" height="650px">
+
+					<div class="carousel-caption" style="margin: 120px;">
+						<h1
+							style="font-size: 140px;font-stretch:ultra-condensed;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+							<b>LE STYLIST</b></h1>
+						<div style="line-height: 0.8;">
+							<p style="font-size:40px;letter-spacing: -10px;display: inline;">--------</p>&ensp;
+							<p style="display: inline-block;font-size: 40px;font-weight: 200;">WEAR YOUR DRESS</p><br>
+						</div>
+						<div class="dropdown">
+							<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"
+								style="border-radius: 70%;">
+								<i class="arrow down"></i>
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#trending">Western</a>
+								<a class="dropdown-item" href="#shop">Traditional</a>
+								<a class="dropdown-item" href="#shop">Formal</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+	</div>
+	<div>
+		<div class="container" id="trending">
+			<div class="cont">
+				<h2 class="k" style="text-align:center;font-size: 120px;opacity: 0.2;color: black;font-weight: 600;">
+					Trending</h2>
+			</div>
+			<div class="content2">
+				<h1 style="text-align:center;font-size: 50px;color: black;font-weight: 400;">TRENDING</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="card img-thumbnail">
+					<div style="position:relative">
+						<img class="card-img-top " src="images/dress1.jpg" alt="Card image" width=100% height="400px">
+					</div>
+					<div class="text-block">
+						<h1 style="font-size: 20px;">30%</h1>
+					</div>
+					<div class="card-body">
+						<p>Young Women Wearing Dress</p>
+						<p style="display: inline-block;">$120</p>
+						<div style="display: inline-block;float: right;">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="card img-thumbnail">
+					<img class="card-img-top " src="images/dress2.jpg" alt="Card image" width=100% height="400px">
+
+					<div class="card-body">
+						<p>Young Women Wearing Dress</p>
+						<p style="text-decoration: line-through;display: inline;color:darkgrey;">$120</p>
+						<p style="display:inline-block;">$80</p>
+						<div style="display: inline-block;float: right;">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="card img-thumbnail">
+					<div style="position: relative;">
+						<img class="card-img-top" src="images/dress3.jpg" alt="Card image" width=100% height="400px ">
+					</div>
+					<div class="text-block">
+						<h1 style="font-size: 20px;">30%</h1>
+					</div>
+					<div class="card-body">
+						<p>Young Women Wearing Dress</p>
+						<p style="display: inline-block;">$120</p>
+						<div style="display: inline-block;float: right;">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid bg-light " style="margin-top: 50px;" id="about">
+		<h1> <br></h1>
+		<div class="row">
+			<div class="col-xl-6">
+				<video width="100%" height="500px" controls autoplay="autoplay" muted="muted">
+					<source src="images/Cute_little_girl_baby_dress.mp4.mp4" type="video/mp4">
+					<source src="movie.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+				</video>
+
+			</div>
+			<div class="col-xl-6">
+				<h1 style="font-weight: 600;">MODIST <br>ONLINE<br> FASHION SHOP</h1>
+				<p>Myntra is an Indian fashion e-commerce company headquartered in Bengaluru, Karnataka, India. The
+					company was founded in 2007 to sell personalized gift items.Established by Mukesh Bansal along with
+					Ashutosh Lawania and Vineet Saxena; Myntra sold on-demand personalized gift items. It mainly
+					operated on the B2B (business-to-business) model during its initial years. Between 2007 and 2010,
+					the site allowed customers to personalize products such as T-shirts, mugs, mouse pads, and others.
+				</p>
+				<p>Established by Mukesh Bansal along with Ashutosh Lawania and Vineet Saxena; Myntra sold on-demand
+					personalized gift items. It mainly operated on the B2B (business-to-business) model during its
+					initial years. Between 2007 and 2010, the site allowed customers to personalize products such as
+					T-shirts, mugs, mouse pads, and others
+
+					In 2011, Myntra began selling fashion and lifestyle products and moved away from personalisation. By
+					2012 Myntra offered products from 350 Indian and International brands. The website launched the
+					brands Fastrack Watches and Being Human.
+				</p>
+				<p>
+					In 2011, Myntra began selling fashion and lifestyle products and moved away from personalisation. By
+					2012 Myntra offered products from 350 Indian and International brands.
+				</p>
+			</div>
+		</div>
+		<h2><br></h2>
+	</div>
+	<div>
+		<div class="container" id="shop">
+			<div class="cont">
+				<h2 class="k" style="text-align:center;font-size: 120px;opacity: 0.2;color: black;font-weight: 600;">
+					Products</h2>
+			</div>
+			<div class="content2">
+				<h1 style="text-align:center;font-size: 50px;color: black;font-weight: 400;">OUR PRODUCTS</h1>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card">
+					<img class="card-img-top img-thumbnail" src="images/dress4.jpg" alt="Card image" width=100%
+						height=300px style="overflow: hidden;">
+					<div class="card-body">
+						<p>Young Women Wearing Dress</p>
+						<p style="display: inline-block;">$120</p>
+						<div style="display: inline-block;float: right;">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<hr>
+						<br><button type="button" class="btn btn-light">Add to cart&nbsp;<span
+								style='font-size:20px;'>&#x2b;</span></button>
+						<button style="float: right;"><i class="fa fa-heart-o"></i></button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<img class="card-img-top  img-thumbnail" src="images/dress5.jpg" alt="Card image" width=100%
+						height=300px style="overflow: hidden;">
+					<div class="card-body">
+						<p>Young Women Wearing Dress</p>
+						<p style="text-decoration: line-through;display: inline;color:darkgrey;">$120</p>
+						<p style="display:inline-block;">$80</p>
+						<div style="display: inline-block;float: right;">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<hr>
+						<br><button type="button" class="btn btn-light">Add to cart&nbsp;<span
+								style='font-size:20px;'>&#x2b;</span></button>
+						<button style="float: right;"><i class="fa fa-heart-o"></i></button>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="card">
+					<img class="card-img-top  img-thumbnail" src="images/dress6.jpg" width=100% height=300px
+						alt="Card image">
+					<div class="card-body">
+						<p>Young Women Wearing Dress</p>
+						<p style="display: inline-block;">$120</p>
+						<div style="display: inline-block;float: right;">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<hr>
+						<br><button type="button" class="btn btn-light ">Add to cart&nbsp;<span
+								style='font-size:20px;'>&#x2b;</span></button>
+						<button style="float: right;"><i class="fa fa-heart-o"></i></button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<img class="card-img-top  img-thumbnail" src="images/dress7.jpg" width=100% height=300px
+						alt="Card image">
+					<div class="card-body">
+						<p>Young Women Wearing Dress</p>
+						<p style="display: inline-block;">$120</p>
+						<div style="display: inline-block;float: right;">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<hr>
+						<br><button type="button" class="btn btn-light ">Add to cart&nbsp;<span
+								style='font-size:20px;'>&#x2b;</span></button>
+						<button style="float: right;"><i class="fa fa-heart-o"></i></button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container-fluid1">
+		<img src="images/goa.jpg" alt="Snow" style="width:100%;height:500px;filter: brightness(50%);">
+		<div class="centered5"><b>SUMMER SALE</b></div>
+	</div>
+
+	<div id="blog">
+		<div class="container">
+			<div class="cont">
+				<h2 class="k" style="text-align:center;font-size: 120px;opacity: 0.2;color: black;font-weight: 600;">
+					Blog</h1>
+			</div>
+			<div class="content2">
+				<h1 style="text-align:center;font-size: 50px;color: black;font-weight: 400;">RECENT BLOG</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="card">
+					<img class="card-img-top img-thumbnail" src="images/dress8.jpg" alt="Card image" width=90%
+						height="200px">
+					<div class="card-body">
+						<p>Even the all-powefull Pointing has no control about the blind text</p>
+						<div style="color:darkgrey">
+							<i style="font-size:24px;display: inline;" class="fa">&#xf073;</i>
+							<p style="display: inline-block;">Dec 6,2018</p>
+							<p style="display: inline-block;">Admin</p>
+							<i style="font-size:24px;display: inline-block;" class="fa fa-address-card"></i>
+							<p style="display: inline-block;">3</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="card">
+					<img class="card-img-top img-thumbnail" src="images/dress9.jpg" alt="Card image" width=90%
+						height="200px">
+					<div class="card-body">
+						<p>Even the all-powefull Pointing has no control about the blind text</p>
+						<div style="color:darkgrey">
+							<i style="font-size:24px;display: inline;" class="fa">&#xf073;</i>
+							<p style="display: inline-block;">Dec 6,2018</p>
+							<p style="display: inline-block;">Admin</p>
+							<i style="font-size:24px;display: inline-block;" class="fa fa-address-card"></i>
+							<p style="display: inline-block;">3</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="card">
+					<img class="card-img-top img-thumbnail" src="images/dress10.jpg" alt="Card image" width=90%
+						height="200px ">
+					<div class="card-body">
+						<p>Even the all-powefull Pointing has no control about the blind text</p>
+						<div style="color:darkgrey">
+							<i style="font-size:24px;display: inline;" class="fa">&#xf073;</i>
+							<p style="display: inline-block;">Dec 6,2018</p>
+							<p style="display: inline-block;">Admin</p>
+							<i style="font-size:24px;display: inline-block;" class="fa fa-address-card"></i>
+							<p style="display: inline-block;">3</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="padding-top: 30px;" id="contact">
+		<footer class="style=padding-top:20px">
+			<div class="container-fluid1">
+				<img src="images/mulbags.jpg" alt="Snow" style="width:100%;height:500px;">
+				<div class="row">
+					<div class="col-lg-3 centered">10,000 HappyCustomers</div>
+					<div class=" col-lg-3 centered1">100 Branches</div>
+					<div class="col-lg-3 centered2">1,000 Partner</div>
+					<div class="col-lg-3 centered3">100 Awards</div>
+				</div>
+			</div>
+			<div class="container-fluid" style="background-color: whitesmoke">
+				<div class="row">
+
+					<div class="col-lg-3 " style="margin-top: 30px;">
+						<p class="con" style="padding-bottom: 20px;">MODIST</p>
+						<p>
+							<button type="button" class="btn btn-secondary btn-circle btn-xl "
+								style="padding-left: 10px;"><i class="fa fa-twitter"></i></button> &ensp;
+							<button type="button" class="btn btn-secondary btn-circle btn-xl"
+								style="padding-left: 10px;"><i class="fa fa-facebook"></i></button> &ensp;
+							<button type="button" class="btn btn-secondary btn-circle btn-xl"
+								style="padding-left: 10px;"><i class="fa fa-instagram"></i></button>
+						</p>
+					</div>
+
+					<div class="col-lg-3 " style="margin-top: 30px;">
+						<p class="con">MENU</p><br>
+						<div style="padding-top:0%;line-height: -0.2;">
+							<a href="#" class="con1">Shop</a><br>
+							<a href="#" class="con1">About</a><br>
+							<a href="#" class="con1">Journal</a><br>
+						</div>
+					</div>
+					<div class="col-lg-3 " style="margin-top: 30px;">
+						<p class="con">HELP</p><br>
+						<div style="padding-top: 0%;line-height: -0.2;">
+							<a href="#" class="con1">Shipping Information</a>&ensp;
+							<a href="#" class="con1">FAQs</a><br>
+							<a href="#" class="con1">Returns &Exchange</a>&ensp;
+							<a href="#" class="con1">Contact</a><br>
+							<a href="#" class="con1">Terms & Conditions</a><br>
+						</div>
+					</div>
+					<div class="col-lg-3 " style="margin-top: 30px;">
+						<p class="con">HAVE A QUESTIONS?</p><br>
+						<div style="padding-top: 0%;">
+							<i style="font-size:24px;display: inline;line-height: 2.0;" class="fa">&#xf041;</i>&ensp;
+							<div style="display: inline-block;line-height: 1.2;">
+								<p style="display: inline-block;">203 Fake St.MountainView<br>San Franciso,Calfornia,USA
+								</p><br>
+							</div>
+							<br>
+
+							<i style="font-size:24px;display: inline;line-height: 2.0;" class="fa">&#xf095;</i>&ensp;
+							<p style="display: inline-block;">+2 392 3929 210</p><br>
+							<i style="font-size:24px;display: inline;line-height: 2.0;" class="fa">&#xf0e0;</i>&ensp;
+							<p style="display: inline-block;">info@yourdomain.com</p><br>
+						</div>
+					</div>
+
+				</div>
+				<br>
+				<br>
+				<br>
+				<div style="text-align: center;">
+					<p style="text-align: center;display: inline;">Copyrights &copy All rights reserved | This template
+						is made with &hearts; by</p>
+					<p style="display: inline-block;color:palevioletred;font-weight: 500;">Colorlib</p>
+				</div>
+			</div>
+
+		</footer>
+	</div>
+</body>
+
+</html>
